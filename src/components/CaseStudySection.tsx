@@ -57,7 +57,7 @@ export default function CaseStudies() {
             <h2 className="text-4xl font-bold text-slate-900 leading-tight mb-5">
               Proven AI Success Stories
             </h2>
-            <p className="text-lg leading-8 text-slate-600">
+            <p className="text-lg leading-8 text-slate-600" style={{ marginTop: '16px' }}>
               Real results from real businesses. See how our AI solutions have
               transformed operations and driven measurable growth.
             </p>
@@ -73,18 +73,18 @@ export default function CaseStudies() {
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center" style={{ paddingTop: '32px', paddingLeft: '32px' }}>
           {caseStudies.map((study, index) => {
             const Icon = study.icon;
             return (
               <div
                 key={index}
-                className="group flex flex-col w-full max-w-sm min-h-[140px] bg-slate-50 border border-slate-200 rounded-2xl overflow-hidden"
+                className="group flex flex-col w-full max-w-sm min-h-[180px] bg-slate-50 border border-slate-200 rounded-2xl overflow-hidden"
               >
                 {/* Card Top Accent */}
 
 
-                <div className="flex flex-col flex-1 p-6">
+                <div className="flex flex-col flex-1 justify-between" style={{ padding: '24px 32px' }}>
                   {/* Icon + Badges */}
                   {/* <div className="flex items-center justify-between mb-6">
                     <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-sky-50 border border-sky-100 shrink-0">
@@ -106,7 +106,7 @@ export default function CaseStudies() {
                   </h3>
 
                   {/* Description */}
-                  <p className="text-[11px] leading-5 text-slate-500 flex-1 mb-7">
+                  <p className="text-[11px] leading-5 text-slate-500">
                     {study.description}
                   </p>
 
@@ -139,7 +139,7 @@ export default function CaseStudies() {
         </div>
 
         {/* Bottom Statement */}
-        <div className="mt-20 flex items-center gap-4">
+        <div className="mt-20 flex items-center gap-4" style={{ marginTop: '60px' }}>
           <div className="h-10 w-px bg-sky-500" />
           <p className="text-lg font-semibold text-slate-700">
             Results are not promises. They are{" "}

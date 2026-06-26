@@ -38,26 +38,26 @@ export default function IndustrySolutions() {
           <h2 className="text-4xl font-bold text-slate-900 mb-6 leading-tight">
             Industry-Ready AI Solutions
           </h2>
-          <p className="max-w-2xl text-lg leading-8 tracking-wide text-slate-600">
+          <p className="max-w-2xl text-lg leading-8 tracking-wide text-slate-600" style={{ marginTop: '16px' }}>
             Purpose-built AI systems designed to automate operations, improve
             customer experiences, and accelerate business growth.
           </p>
         </div>
 
         {/* Timeline */}
-        <div className="space-y-28">
+        <div className="space-y-28" style={{ marginTop: '48px' }}>
           {solutions.map((solution, index) => (
             <div key={index} className="flex gap-10">
 
               {/* Left Line + Dot */}
-              <div className="relative hidden w-8 lg:flex flex-col items-center">
+              <div className="relative hidden w-8 lg:flex flex-col items-center"  style={{ marginTop: '28px' }}>
                 <div className="w-3 h-3 rounded-full bg-sky-500 shrink-0 mt-1" />
                 <div className="flex-1 w-px bg-sky-200 mt-1" />
               </div>
 
               {/* Content */}
               <div className="max-w-3xl pb-14">
-                <p className="text-sm font-semibold uppercase tracking-widest text-sky-600 mb-8">
+                <p className="text-sm font-semibold uppercase tracking-widest text-sky-600 mb-8" style={{ marginTop: '28px' }}>
                   {`Solution 0${index + 1}`}
                 </p>
 
@@ -80,6 +80,7 @@ export default function IndustrySolutions() {
 
                 <Link
                   href={solution.href}
+                  style={{ marginTop: '32px', display: 'inline-flex' }}
                   className="group inline-flex items-center gap-2 font-semibold tracking-wide text-sky-600 transition-all hover:gap-4"
                 >
                   Explore Solution
