@@ -40,7 +40,7 @@ export default function ConsultationCTA() {
           <div className="overflow-hidden  border border-sky-500/40 shadow-[0_0_80px_rgba(59,130,246,.18)]">
 
             <Image
-              src="/images/consultation-video.jpg"
+              src="/Consultation.png"
               alt="Consultation"
               width={1600}
               height={900}

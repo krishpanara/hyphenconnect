@@ -15,7 +15,7 @@ export default function HeroSection() {
       {/* ── HERO ───────────────────────────────────────────────────────── */}
       <section className="relative min-h-screen flex flex-col">
 
-        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/hero.png')", backgroundAttachment: 'fixed' }} />
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/herobanner.png')", backgroundAttachment: 'fixed' }} />
         <div className="absolute inset-0 -z-10 bg-[#07111c]" />
         <div className="absolute inset-0 bg-black/55" />
         <div className="absolute inset-0 bg-linear-to-r from-black/60 via-black/25 to-transparent" />

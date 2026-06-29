@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { Open_Sans } from "next/font/google";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const openSans = Open_Sans({
   subsets: ["latin"],
@@ -20,7 +21,7 @@ export default function PrivacyPolicyPage() {
           className="absolute inset-0 z-0"
           style={{
             backgroundImage:
-              "url('https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/vnw8d1Cb1154QPFGW5Vz/media/69862dc947d382bcfb4a57f7.jpg')",
+              "url('/privacy-policy.png')",
             backgroundPosition: "center",
             backgroundSize: "cover",
             opacity: 0.3,
@@ -108,7 +109,7 @@ export default function PrivacyPolicyPage() {
       </section>
 
    
- 
+      <Footer />
     </main>
   );
 }

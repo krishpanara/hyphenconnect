@@ -17,7 +17,7 @@ export default function TestimonialsSection() {
             <div className="relative overflow-hidden rounded-2xl shadow-xl">
 
               <Image
-                src="/images/testimonial-video.jpg"
+                src="/Testimonials1.png"
                 alt="Customer Story"
                 width={900}
                 height={850}
