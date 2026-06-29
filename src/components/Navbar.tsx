@@ -15,7 +15,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false)
 
   return (
-    <header className="absolute top-6 left-0 right-0 z-50">
+    <header className="absolute top-6 left-0 right-0 z-50 mt-[50px]">
       <div className="container flex items-center justify-between py-5">
 
         {/* Logo */}

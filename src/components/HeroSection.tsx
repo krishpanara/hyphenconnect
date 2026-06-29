@@ -4,7 +4,7 @@ const stats = [
   { value: '50+',  label: 'AI Projects' },
   { value: '98%',  label: 'Satisfaction' },
   { value: '10x',  label: 'Faster Processing' },
-  { value: '24/7', label: '' },
+  { value: '24/7', label: 'Availability' },
 ]
 
 

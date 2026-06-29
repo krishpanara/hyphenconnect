@@ -45,11 +45,11 @@ const caseStudies = [
 
 export default function CaseStudies() {
   return (
-    <section className="bg-[#fffff] py-36">
+    <section className="bg-[#fffff] py-20">
       <div className="container">
 
         {/* Header */}
-        <div className="flex flex-wrap items-end justify-between gap-6 mb-20">
+        <div className="flex flex-wrap items-end justify-between gap-6 mb-10">
           <div className="max-w-2xl">
             <p className="text-sm font-semibold uppercase tracking-widest text-sky-600 mb-4">
               Case Studies

@@ -27,11 +27,11 @@ const solutions = [
 
 export default function IndustrySolutions() {
   return (
-    <section className="bg-white py-36">
+    <section className="bg-gray-100 py-20">
       <div className="container">
 
         {/* Heading */}
-        <div className="mb-32">
+        <div className="mb-10">
           <p className="text-sm font-semibold uppercase tracking-widest text-sky-600 mb-4">
             Solutions
           </p>
@@ -45,7 +45,7 @@ export default function IndustrySolutions() {
         </div>
 
         {/* Timeline */}
-        <div className="space-y-28" style={{ marginTop: '48px' }}>
+        <div className="space-y-10" style={{ marginTop: '48px' }}>
           {solutions.map((solution, index) => (
             <div key={index} className="flex gap-10">
 

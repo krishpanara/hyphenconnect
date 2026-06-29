@@ -5,8 +5,8 @@ import { ArrowRight, Play, Star } from "lucide-react";
 
 export default function TestimonialsSection() {
   return (
-    <section className="bg-[#f4f7fb] py-20">
-      <div className="max-w-5xl mx-auto px-6 lg:px-16" style={{ marginLeft: '118px', paddingBottom: '80px' }}>
+    <section className="bg-[#f4f7fb]">
+      <div className="max-w-5xl mx-auto px-6 lg:px-16" style={{ marginLeft: '118px', paddingBottom: '40px' }}>
 
         <div className="spacing grid lg:grid-cols-2 gap-12 items-center">
 

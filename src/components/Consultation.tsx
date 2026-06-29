@@ -5,7 +5,7 @@ import { ArrowRight, Calendar, Play } from "lucide-react";
 
 export default function ConsultationCTA() {
   return (
-    <section className="relative overflow-hidden bg-black py-24">
+    <section className="relative overflow-hidden bg-black py-10">
       {/* Background Glow */}
       <div className="absolute inset-x-0 bottom-0 h-[420px] " />
 

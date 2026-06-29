@@ -1,5 +1,5 @@
 import HeroSection from '@/components/HeroSection'
-import CallWidget from '@/components/CallWidget'
+// import CallWidget from '@/components/CallWidget'
 import ServicesSection from '@/components/ServicesSection'
 import SolutionsSection from '@/components/SolutionsSection'
 import CaseStudySection from '@/components/CaseStudySection'
@@ -22,7 +22,7 @@ export default function Home() {
       <TestimonialsCarousel />
       <ConsultationSection />
       <TechStackSection />
-      <CallWidget />
+      {/* <CallWidget /> */}
       <Footer />
     </main>
   )
