@@ -54,7 +54,7 @@ export default function CaseStudies() {
             <p className="text-sm font-semibold uppercase tracking-widest text-sky-600 mb-4">
               Case Studies
             </p>
-            <h2 className="text-4xl font-bold text-slate-900 leading-tight mb-5">
+            <h2 className="text-4xl font-bold text-slate-900 leading-tight mb-5 animate-slide-left">
               Proven AI Success Stories
             </h2>
             <p className="text-lg leading-8 text-slate-600" style={{ marginTop: '16px' }}>

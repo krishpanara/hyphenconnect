@@ -21,8 +21,8 @@ export default function ServicesSection() {
     <section className="section-py bg-[#ffffff]">
       <div className="container">
         {/* Header */}
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '16px', marginBottom: '48px' }}>
-          <h2 style={{ fontSize: 'clamp(24px, 4vw, 36px)', fontWeight: '800', color: '#111827', lineHeight: '1.2' }}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexWrap: 'wrap', gap: '16px', marginBottom: '48px' }}>
+          <h2 style={{ fontSize: 'clamp(24px, 4vw, 36px)', fontWeight: '800', color: '#111827', lineHeight: '1.2', textAlign: 'center', animation: 'fadeInUp 0.8s ease forwards' }}>
             Everything You Need to Harness AI
           </h2>
           {/* <button style={{ border: '1px solid #111827', color: '#111827', fontSize: '14px', fontWeight: '600', padding: '12px 24px', borderRadius: '8px', background: 'transparent', cursor: 'pointer' }}>

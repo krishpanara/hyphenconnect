@@ -15,15 +15,15 @@ export default function Navbar() {
   const [open, setOpen] = useState(false)
 
   return (
-    <header className="absolute top-18 left-0 right-0 z-50">
+    <header className="absolute top-6 left-0 right-0 z-50">
       <div className="container flex items-center justify-between py-5">
 
         {/* Logo */}
         <div>
           <span className="text-[20px] font-bold leading-none">
             <span className="text-white">Hyphen</span>
-            <span className="text-sky-400">Connect</span>
-            <span className="text-sky-400">AI</span>
+            <span className="text-sky-400">Labs</span>
+           
           </span>
           {/* <p className="text-[9px] text-slate-400 tracking-widest uppercase mt-0.5">
             AI-Driven Efficiency | Unmatched Growth

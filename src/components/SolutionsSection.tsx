@@ -35,7 +35,7 @@ export default function IndustrySolutions() {
           <p className="text-sm font-semibold uppercase tracking-widest text-sky-600 mb-4">
             Solutions
           </p>
-          <h2 className="text-4xl font-bold text-slate-900 mb-6 leading-tight">
+          <h2 className="text-4xl font-bold text-slate-900 mb-6 leading-tight animate-slide-left">
             Industry-Ready AI Solutions
           </h2>
           <p className="max-w-2xl text-lg leading-8 tracking-wide text-slate-600" style={{ marginTop: '16px' }}>

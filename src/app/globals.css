@@ -2,59 +2,24 @@
 
 /* ── Spacing tokens ──────────────────────────────────────────────────────── */
 :root {
-  --space-x: 40px;      /* horizontal padding */
-  --space-y: 80px;      /* vertical padding   */
-  --max-w:   1400px;    /* max content width  */
+  --space-x: 120px;
+  --space-y: 80px;
+  --max-w:   1400px;
 }
 
 @media (max-width: 1024px) {
-  :root { --space-x: 32px; --space-y: 64px; }
+  :root { --space-x: 64px; --space-y: 64px; }
 }
 
 @media (max-width: 768px) {
-  :root { --space-x: 24px; --space-y: 48px; }
+  :root { --space-x: 32px; --space-y: 48px; }
 }
 
 @media (max-width: 480px) {
   :root { --space-x: 16px; --space-y: 32px; }
 }
 
-/* ── Reusable layout classes ─────────────────────────────────────────────── */
-
-/* Centred, max-width wrapper — use on inner div inside every section */
-.container {
-  width: 100%;
-  max-width: var(--max-w);
-  margin-inline: auto;
-  padding-inline: var(--space-x);
-}
-
-/* Vertical rhythm for sections */
-.section-py {
-  padding-block: var(--space-y);
-}
-
-/* Horizontal padding only (e.g. navbars, overlays) */
-.section-px {
-  padding-inline: var(--space-x);
-}
-
-/* Both axes — convenience combo */
-.section-p {
-  padding-inline: var(--space-x);
-  padding-block: var(--space-y);
-}
-
-/* Full-bleed section wrapper: centres content + vertical rhythm */
-.section-container {
-  width: 100%;
-  max-width: var(--max-w);
-  margin-inline: auto;
-  padding-inline: var(--space-x);
-  padding-block: var(--space-y);
-}
-
-/* ── Base reset ────────────────────────────────────────────────────────── */
+/* ── Base reset ──────────────────────────────────────────────────────────── */
 * {
   margin: 0;
   padding: 0;
@@ -69,21 +34,44 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.container{
-  padding:30px 120px;
-  
+/* ── Layout ──────────────────────────────────────────────────────────────── */
+.container {
+  width: 100%;
+  max-width: var(--max-w);
+  margin-inline: auto;
+  padding-inline: var(--space-x);
+  padding-block: var(--space-y);
 }
 
-@keyframes marquee {
-  from {
-    transform: translateX(0%);
-  }
+.section-py {
+  padding-block: var(--space-y);
+}
 
-  to {
-    transform: translateX(-50%);
-  }
+.section-px {
+  padding-inline: var(--space-x);
+}
+
+/* ── Marquee ─────────────────────────────────────────────────────────────── */
+@keyframes marquee {
+  from { transform: translateX(0%); }
+  to   { transform: translateX(-50%); }
 }
 
 .animate-marquee {
   animation: marquee 22s linear infinite;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-left {
+  animation: slideInLeft 0.8s ease forwards;
 }
