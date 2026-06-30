@@ -57,10 +57,10 @@ export default function TestimonialsSection() {
               Industry Leaders
             </h2>
 
-            <p className="mt-6 text-slate-600 text-lg leading-8">
+            {/* <p className="mt-6 text-slate-600 text-lg leading-8">
               Don't just take our word for it — hear from businesses that have
               transformed their operations with our AI solutions.
-            </p>
+            </p> */}
 
             {/* Quote */}
 

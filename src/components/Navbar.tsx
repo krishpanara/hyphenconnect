@@ -1,14 +1,15 @@
 'use client'
 
 import { useState } from 'react'
+import Link from 'next/link'
 
 const links = [
-  'Home',
-  'Hyphen Consultancy',
-  'Hyphen ONE',
-  'Hyphen Exchange',
-  'Become An Affiliate',
-  'Contact Us',
+  { label: 'Home', href: '/' },
+  { label: 'Hyphen Consultancy', href: '/AIChatbot' },
+  { label: 'Hyphen ONE', href: '#' },
+  { label: 'Hyphen Exchange', href: '#' },
+  { label: 'Become An Affiliate', href: '#' },
+  { label: 'Contact Us', href: '#' },
 ]
 
 export default function Navbar() {
@@ -33,13 +34,13 @@ export default function Navbar() {
         {/* Desktop nav */}
         <nav className="hidden lg:flex items-center gap-4">
           {links.map((l) => (
-            <a
-              key={l}
-              href="#"
+            <Link
+              key={l.label}
+              href={l.href}
               className="text-white/85 hover:text-white text-[13px] font-medium transition-colors whitespace-nowrap"
             >
-              {l}
-            </a>
+              {l.label}
+            </Link>
           ))}
         </nav>
 
@@ -59,9 +60,9 @@ export default function Navbar() {
       {open && (
         <div className="lg:hidden bg-black/80 backdrop-blur-md border-t border-white/10 section-px py-4">
           {links.map((l) => (
-            <a key={l} href="#" className="block text-white/80 hover:text-white py-2.5 text-sm font-medium border-b border-white/5 last:border-0">
-              {l}
-            </a>
+            <Link key={l.label} href={l.href} className="block text-white/80 hover:text-white py-2.5 text-sm font-medium border-b border-white/5 last:border-0">
+              {l.label}
+            </Link>
           ))}
         </div>
       )}
