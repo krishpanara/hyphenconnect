@@ -6,7 +6,7 @@ import { ArrowRight, Play, Star } from "lucide-react";
 export default function TestimonialsSection() {
   return (
     <section className="bg-[#f4f7fb]">
-      <div className="max-w-5xl mx-auto px-6 lg:px-16" style={{ marginLeft: '118px', paddingBottom: '40px' }}>
+      <div className="container">
 
         <div className="spacing grid lg:grid-cols-2 gap-12 items-center">
 
@@ -156,7 +156,7 @@ export default function TestimonialsSection() {
 
             {/* Button */}
 
-            <button className="mt-10 inline-flex items-center gap-3 bg-slate-900 hover:bg-slate-800 transition px-7 py-4  text-white font-semibold"  style={{ marginTop: '18px' }}>
+            <button className="mb-10 inline-flex items-center gap-3 bg-slate-900 hover:bg-slate-800 transition px-7 py-4  text-white font-semibold"  style={{ marginTop: '18px' }}>
 
               Read More Stories
 
